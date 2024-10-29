@@ -44,12 +44,10 @@
   </head>
   <body class="bg-bg-color">
     <!-- Header section start  -->
-    <header class="headerbg-gradient-to-t from-[#FFFFFF00] to-[#ffffff]">
-      <div class="container">
+    <header class="header bg-gradient-to-t from-[#FFFFFF00] to-[#ffffff]">
+      <div class="container py-6">
         <!-- Desktop navbar start  -->
-        <div
-          class="desk-nav md:flex justify-between py-3 items-center hidden mt-6"
-        >
+        <div class="desk-nav md:flex justify-between py-3 items-center hidden">
           <a href="index.html" class="flex items-center gap-1"
             ><img src="./assets/img/icon.svg" alt="" />
             <span
@@ -91,17 +89,17 @@
           <div class="cta flex items-center gap-4">
             <div class="hidden md:flex gap-4">
               <button
-                class="bg-white py-[10px] px-[15px] rounded-full border border-bg-color"
+                class="bg-white py-[10px] px-[15px] hover:bg-renterio duration-300 rounded-full border border-bg-color"
               >
                 <img src="./assets/img/search.svg" alt="" />
               </button>
               <button
-                class="bg-white py-[10px] px-[15px] rounded-full border border-bg-color"
+                class="bg-white py-[10px] px-[15px] hover:bg-renterio duration-300 rounded-full border border-bg-color"
               >
                 <img src="./assets/img/cart.svg" alt="" />
               </button>
               <button
-                class="flex gap-2 items-center bg-renterio px-5 py-3 rounded-full"
+                class="flex gap-2 items-center bg-renterio px-5 py-3 hover:opacity-80 duration-300 rounded-full"
               >
                 <span class="font-extrabold text-xl font-manrope"
                   >Book Consult</span
@@ -114,7 +112,7 @@
               </button>
             </div>
             <button
-              class="bg-white py-[10px] px-[15px] rounded-full border border-bg-color lg:hidden"
+              class="bg-white py-[10px] px-[15px] hover:bg-renterio duration-300 rounded-full border border-bg-color lg:hidden"
             >
               <i class="bi bi-list text-3xl text-[#737373]"></i>
             </button>
@@ -131,12 +129,40 @@
             ></a
           >
           <button
-            class="bg-white py-[10px] px-[15px] rounded-full border border-bg-color lg:hidden"
+            class="bg-white py-[10px] px-[15px] rounded-full hover:bg-renterio duration-300 border border-bg-color lg:hidden"
           >
             <i class="bi bi-list text-3xl text-[#737373]"></i>
           </button>
         </div>
         <!-- Mobile Navbar end  -->
+      </div>
+      <div class="container mb-10 md:mb-[80px] xl:mb-[100px]">
+        <div class="flex flex-col items-center gap-6">
+          <img
+            class="w-[262px] md:w-[426px] lg:w-[calc(100%-400px)] xl:w-[572px]"
+            src="./assets/img/baner-img.png"
+            alt=""
+          />
+          <h1
+            class="font-extrabold text-[28px] md:text-4xl lg:text-5xl xl:text-[64px] text-center md:leading-tight lg:leading-tight w-[335px] md:w-[610px] lg:w-[700px] xl:w-[1084px]"
+          >
+            A barn house of this design has a striking appearance
+          </h1>
+          <p class="text-center w-full md:w-[566px] lg:w-[676px] xl:w-[973px]">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents, and
+            large windows that flood the space with natural light.
+          </p>
+          <a
+            href="#"
+            class="bg-[#ABED5F80] hover:bg-[#ABEF5F] duration-300 md:w-[210px] flex w-full justify-center items-center gap-2 py-3 px-6 rounded-full border border-[#ABEF5F]"
+            ><span class="text-xl font-bold text-[#212121]">View Details</span>
+            <img
+              src="./assets/img/black-arrow.svg"
+              class="p-[10px] bg-[#ABEF5F] rounded-full"
+              alt=""
+          /></a>
+        </div>
       </div>
     </header>
     <!-- Header section end  -->

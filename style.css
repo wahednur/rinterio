@@ -2,3 +2,20 @@
 /* .header {
   background: linear-gradient(0deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
 } */
+h1,
+h2 {
+  -webkit-text-stroke: 2px #212121;
+  -webkit-text-fill-color: #212121;
+  paint-order: fill;
+}
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  font-family: "Manrope", serif;
+}

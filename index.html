@@ -44,10 +44,12 @@
   </head>
   <body class="bg-bg-color">
     <!-- Header section start  -->
-    <header class="header mt-11 bg-gradient-to-t from-[#FFFFFF00] to-[#ffffff]">
+    <header class="headerbg-gradient-to-t from-[#FFFFFF00] to-[#ffffff]">
       <div class="container">
         <!-- Desktop navbar start  -->
-        <div class="desk-nav md:flex justify-between py-3 items-center hidden">
+        <div
+          class="desk-nav md:flex justify-between py-3 items-center hidden mt-6"
+        >
           <a href="index.html" class="flex items-center gap-1"
             ><img src="./assets/img/icon.svg" alt="" />
             <span
@@ -119,6 +121,22 @@
           </div>
         </div>
         <!-- Desktop navbar end  -->
+        <!-- Mobile Navbar start  -->
+        <div class="mbl-nav md:hidden flex justify-between py-4">
+          <a href="index.html" class="flex items-center gap-1"
+            ><img src="./assets/img/icon.svg" alt="" />
+            <span
+              class="text-title-color text-[28px] font-extrabold font-manrope"
+              >Rinterio</span
+            ></a
+          >
+          <button
+            class="bg-white py-[10px] px-[15px] rounded-full border border-bg-color lg:hidden"
+          >
+            <i class="bi bi-list text-3xl text-[#737373]"></i>
+          </button>
+        </div>
+        <!-- Mobile Navbar end  -->
       </div>
     </header>
     <!-- Header section end  -->

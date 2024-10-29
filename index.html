@@ -33,7 +33,7 @@
               center: true,
               padding: {
                 DEFAULT: "12px",
-                lg: "0px",
+                xl: "0px",
               },
             },
           },
@@ -42,9 +42,9 @@
     </script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-bg-color">
+  <body class="bg-bg-color font-manrope">
     <!-- Header section start  -->
-    <header class="header bg-gradient-to-t from-[#FFFFFF00] to-[#ffffff]">
+    <header class="header bg-gradient-to-t from-[#FFFFFF] to-[#ffffff00]">
       <div class="container py-6">
         <!-- Desktop navbar start  -->
         <div class="desk-nav md:flex justify-between py-3 items-center hidden">
@@ -99,7 +99,7 @@
                 <img src="./assets/img/cart.svg" alt="" />
               </button>
               <button
-                class="flex gap-2 items-center bg-renterio px-5 py-3 hover:opacity-80 duration-300 rounded-full"
+                class="flex gap-2 items-center bg-renterio px-5 py-3 hover:bg-opacity-clr duration-300 rounded-full"
               >
                 <span class="font-extrabold text-xl font-manrope"
                   >Book Consult</span
@@ -136,7 +136,7 @@
         </div>
         <!-- Mobile Navbar end  -->
       </div>
-      <div class="container mb-10 md:mb-[80px] xl:mb-[100px]">
+      <div class="container pb-10 md:pb-[80px] xl:pb-[100px]">
         <div class="flex flex-col items-center gap-6">
           <img
             class="w-[262px] md:w-[426px] lg:w-[calc(100%-400px)] xl:w-[572px]"
@@ -166,5 +166,82 @@
       </div>
     </header>
     <!-- Header section end  -->
+    <!-- We design thoughtful, liveable spaces section start  -->
+    <section>
+      <div class="container py-8 md:py-[72px] xl:py-[100px]">
+        <div class="relative hidden lg:block h-[100px]">
+          <img
+            class="absolute -left-8 bottom-4 rotate-6"
+            src="./assets/img/vec.svg"
+            alt=""
+          />
+        </div>
+        <div class="flex flex-col lg:flex-row gap-[37px]">
+          <div class="w-full lg:w-1/2">
+            <div class="text-center lg:text-left">
+              <a
+                href="#"
+                class="bg-white py-2 px-4 inline-flex gap-2 items-center rounded-full mb-4"
+                ><img src="./assets/img/right-arrow.svg" alt="" /><span
+                  >About Us</span
+                ></a
+              >
+            </div>
+            <div
+              class="flex flex-col items-center text-center xl:items-start lg:text-left gap-6"
+            >
+              <h2
+                class="text-2xl md:text-[32px] lg:text-[40px] font-bold text-title-color leading-tight font-manrope xl:w-[477px]"
+              >
+                We design thoughtful, liveable spaces
+              </h2>
+              <p class="text-sub-text-clr font-manrope font-medium">
+                he barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents.
+              </p>
+            </div>
+            <div class="flex flex-col md:flex-row lg:flex-col gap-6 mt-6">
+              <div class="p-6 flex gap-6 items-center bg-white rounded-2xl">
+                <img src="./assets/img/ind.svg" alt="" />
+                <div class="flex flex-col gap-3">
+                  <h4
+                    class="font-extrabold text-[#494949] md:text-lg lg:text-xl ont-manrope"
+                  >
+                    Commercial
+                  </h4>
+                  <p class="font-medium text-[#737373] font-manrope">
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                </div>
+              </div>
+              <div class="p-6 flex gap-6 items-center bg-white rounded-2xl">
+                <img src="./assets/img/ind.svg" alt="" />
+                <div class="flex flex-col gap-3">
+                  <h4
+                    class="font-extrabold text-[#494949] md:text-lg lg:text-xl ont-manrope"
+                  >
+                    Commercial
+                  </h4>
+                  <p class="font-medium text-[#737373] font-manrope">
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2">
+            <img
+              class="rounded-2xl overflow-hidden w-full"
+              src="./assets/img/building.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- We design thoughtful, liveable spaces section end  -->
   </body>
 </html>

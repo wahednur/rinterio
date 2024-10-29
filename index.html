@@ -3,7 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/icon.svg"
+      type="image/x-icon"
+    />
     <title>Rinterio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/wahednur-icons@1.0.4/css/wahednur-icons.min.css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -11,10 +20,14 @@
           extend: {
             colors: {
               renterio: "#ABEF5F",
-              "h-text-clr": "#212121",
+              "title-color": "#212121",
               "txt-color": "#494949",
               "sub-text-clr": "#737373",
               "opacity-clr": "#ABEF5F80",
+              "bg-color": "#E9E9E9",
+            },
+            fontFamily: {
+              manrope: ['"Manrope", serif'],
             },
             container: {
               center: true,
@@ -27,10 +40,87 @@
         },
       };
     </script>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="container">
-      <p>test</p>
-    </div>
+  <body class="bg-bg-color">
+    <!-- Header section start  -->
+    <header class="header mt-11 bg-gradient-to-t from-[#FFFFFF00] to-[#ffffff]">
+      <div class="container">
+        <!-- Desktop navbar start  -->
+        <div class="desk-nav md:flex justify-between py-3 items-center hidden">
+          <a href="index.html" class="flex items-center gap-1"
+            ><img src="./assets/img/icon.svg" alt="" />
+            <span
+              class="text-title-color text-[32px] font-extrabold font-manrope"
+              >Rinterio</span
+            ></a
+          >
+          <nav class="hidden lg:flex">
+            <ul class="flex justify-between">
+              <li>
+                <a
+                  class="text-txt-color px-5 py-3 font-manrope font-extrabold"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a class="text-txt-color px-5 py-3 font-manrope" href="#"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a class="text-txt-color px-5 py-3 font-manrope" href="#"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a class="text-txt-color px-5 py-3 font-manrope" href="#"
+                  >Blogs</a
+                >
+              </li>
+              <li>
+                <a class="text-txt-color px-5 py-3 font-manrope" href="#"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="cta flex items-center gap-4">
+            <div class="hidden md:flex gap-4">
+              <button
+                class="bg-white py-[10px] px-[15px] rounded-full border border-bg-color"
+              >
+                <img src="./assets/img/search.svg" alt="" />
+              </button>
+              <button
+                class="bg-white py-[10px] px-[15px] rounded-full border border-bg-color"
+              >
+                <img src="./assets/img/cart.svg" alt="" />
+              </button>
+              <button
+                class="flex gap-2 items-center bg-renterio px-5 py-3 rounded-full"
+              >
+                <span class="font-extrabold text-xl font-manrope"
+                  >Book Consult</span
+                >
+                <img
+                  class="p-[10px] bg-[#1C1C1C] rounded-full"
+                  src="./assets/img/top-right-arrow.svg"
+                  alt=""
+                />
+              </button>
+            </div>
+            <button
+              class="bg-white py-[10px] px-[15px] rounded-full border border-bg-color lg:hidden"
+            >
+              <i class="bi bi-list text-3xl text-[#737373]"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Desktop navbar end  -->
+      </div>
+    </header>
+    <!-- Header section end  -->
   </body>
 </html>
